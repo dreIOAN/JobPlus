@@ -5,10 +5,7 @@
  */
 package job;
 
-/**
- *
- * @author giann
- */
+
 public class Signup extends javax.swing.JFrame {
 
     /**
