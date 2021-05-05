@@ -5,10 +5,7 @@
  */
 package job;
 
-/**
- *
- * @author giann
- */
+
 public class Home extends javax.swing.JFrame {
 
     /**
