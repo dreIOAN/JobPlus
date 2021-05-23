@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 05, 2021 at 10:05 PM
+-- Generation Time: May 23, 2021 at 02:28 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -30,15 +30,19 @@ SET time_zone = "+00:00";
 CREATE TABLE `user` (
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `type` set('HR Team Member','Candidate','Employee','TeamManager') NOT NULL
+  `name` varchar(255) NOT NULL,
+  `surname` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `type` set('HR Team Member','Candidate','Employee','Team Manager') DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`username`, `password`, `type`) VALUES
-('admin', '12345', 'HR Team Member');
+INSERT INTO `user` (`username`, `password`, `name`, `surname`, `email`, `type`) VALUES
+('admin', '12345', 'Admin', 'Admin', 'admin@jobplus.com', 'HR Team Member'),
+('ioandre', '1999', 'Ioanna', 'Dre', 'IoaDre@jobplus.com', 'Team Manager');
 
 --
 -- Indexes for dumped tables
