@@ -7,7 +7,7 @@ package job;
 
 /**
  *
- * @author giann
+ * 
  */
 public class CandidateSearchJobs extends javax.swing.JFrame {
 

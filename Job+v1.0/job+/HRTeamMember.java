@@ -7,7 +7,7 @@ package job;
 
 /**
  *
- * @author giann
+ *
  */
 public class HRTeamMember extends javax.swing.JFrame {
 
@@ -33,7 +33,6 @@ public class HRTeamMember extends javax.swing.JFrame {
         cand = new javax.swing.JLabel();
         jobs = new javax.swing.JLabel();
         empl = new javax.swing.JLabel();
-        signin4 = new javax.swing.JLabel();
         insjob = new javax.swing.JLabel();
         hr = new javax.swing.JLabel();
 
@@ -89,14 +88,6 @@ public class HRTeamMember extends javax.swing.JFrame {
         });
         getContentPane().add(empl, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 400, 120, 30));
 
-        signin4.setText(" ");
-        signin4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                signin4MouseClicked(evt);
-            }
-        });
-        getContentPane().add(signin4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 110, 30));
-
         insjob.setText(" ");
         insjob.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -114,12 +105,16 @@ public class HRTeamMember extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void calMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_calMouseClicked
-           
+           HRTeamMemberCalendar a = new HRTeamMemberCalendar();
+            a.setVisible(true);
+            this.dispose();
     }//GEN-LAST:event_calMouseClicked
 
     private void appMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_appMouseClicked
-       
-            ;
+       HRTeamMemberApplications a = new HRTeamMemberApplications();
+            a.setVisible(true);
+            this.dispose();
+            
     }//GEN-LAST:event_appMouseClicked
 
     private void logoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutMouseClicked
@@ -129,23 +124,27 @@ public class HRTeamMember extends javax.swing.JFrame {
     }//GEN-LAST:event_logoutMouseClicked
 
     private void candMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_candMouseClicked
-        // TODO add your handling code here:
+        HRTeamMemberCandidates a = new HRTeamMemberCandidates();
+            a.setVisible(true);
+            this.dispose();
     }//GEN-LAST:event_candMouseClicked
 
     private void jobsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jobsMouseClicked
-        // TODO add your handling code here:
+            HRTeamMemberJobs a = new HRTeamMemberJobs();
+            a.setVisible(true);
+            this.dispose();
     }//GEN-LAST:event_jobsMouseClicked
 
     private void emplMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_emplMouseClicked
-        // TODO add your handling code here:
+       HRTeamMemberEmployees a = new HRTeamMemberEmployees();
+            a.setVisible(true);
+            this.dispose();
     }//GEN-LAST:event_emplMouseClicked
 
-    private void signin4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signin4MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_signin4MouseClicked
-
     private void insjobMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_insjobMouseClicked
-        // TODO add your handling code here:
+        HRTeamMemberInsertJob a = new HRTeamMemberInsertJob();
+            a.setVisible(true);
+            this.dispose();
     }//GEN-LAST:event_insjobMouseClicked
 
     /**
@@ -193,6 +192,5 @@ public class HRTeamMember extends javax.swing.JFrame {
     private javax.swing.JLabel insjob;
     private javax.swing.JLabel jobs;
     private javax.swing.JLabel logout;
-    private javax.swing.JLabel signin4;
     // End of variables declaration//GEN-END:variables
 }

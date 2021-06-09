@@ -7,7 +7,7 @@ package job;
 
 /**
  *
- * @author giann
+ * 
  */
 public class CandidateCalendar extends javax.swing.JFrame {
 

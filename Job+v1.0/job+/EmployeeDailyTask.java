@@ -7,7 +7,7 @@ package job;
 
 /**
  *
- * @author giann
+ * 
  */
 public class EmployeeDailyTask extends javax.swing.JFrame {
 
