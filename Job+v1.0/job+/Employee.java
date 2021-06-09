@@ -28,13 +28,10 @@ public class Employee extends javax.swing.JFrame {
     private void initComponents() {
 
         logout = new javax.swing.JLabel();
-        cal = new javax.swing.JLabel();
-        app = new javax.swing.JLabel();
-        cand = new javax.swing.JLabel();
-        jobs = new javax.swing.JLabel();
-        empl = new javax.swing.JLabel();
-        signin4 = new javax.swing.JLabel();
-        insjob = new javax.swing.JLabel();
+        feedback = new javax.swing.JLabel();
+        meeting = new javax.swing.JLabel();
+        personaldata = new javax.swing.JLabel();
+        dailytask = new javax.swing.JLabel();
         hr = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -49,61 +46,37 @@ public class Employee extends javax.swing.JFrame {
         });
         getContentPane().add(logout, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 30, 110, 30));
 
-        cal.setText(" ");
-        cal.addMouseListener(new java.awt.event.MouseAdapter() {
+        feedback.setText(" ");
+        feedback.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                calMouseClicked(evt);
+                feedbackMouseClicked(evt);
             }
         });
-        getContentPane().add(cal, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, 110, 30));
+        getContentPane().add(feedback, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 360, 120, 30));
 
-        app.setText(" ");
-        app.addMouseListener(new java.awt.event.MouseAdapter() {
+        meeting.setText(" ");
+        meeting.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                appMouseClicked(evt);
+                meetingMouseClicked(evt);
             }
         });
-        getContentPane().add(app, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 300, 130, 30));
+        getContentPane().add(meeting, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 240, 100, 30));
 
-        cand.setText(" ");
-        cand.addMouseListener(new java.awt.event.MouseAdapter() {
+        personaldata.setText(" ");
+        personaldata.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                candMouseClicked(evt);
+                personaldataMouseClicked(evt);
             }
         });
-        getContentPane().add(cand, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 390, 120, 30));
+        getContentPane().add(personaldata, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 350, 140, 30));
 
-        jobs.setText(" ");
-        jobs.addMouseListener(new java.awt.event.MouseAdapter() {
+        dailytask.setText(" ");
+        dailytask.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jobsMouseClicked(evt);
+                dailytaskMouseClicked(evt);
             }
         });
-        getContentPane().add(jobs, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 220, 90, 30));
-
-        empl.setText(" ");
-        empl.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                emplMouseClicked(evt);
-            }
-        });
-        getContentPane().add(empl, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 400, 120, 30));
-
-        signin4.setText(" ");
-        signin4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                signin4MouseClicked(evt);
-            }
-        });
-        getContentPane().add(signin4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 110, 30));
-
-        insjob.setText(" ");
-        insjob.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                insjobMouseClicked(evt);
-            }
-        });
-        getContentPane().add(insjob, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 110, 30));
+        getContentPane().add(dailytask, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 110, 30));
 
         hr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/job/Employee.jpg"))); // NOI18N
         hr.setText(" ");
@@ -113,40 +86,36 @@ public class Employee extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void calMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_calMouseClicked
-           
-    }//GEN-LAST:event_calMouseClicked
-
-    private void appMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_appMouseClicked
-       
-            ;
-    }//GEN-LAST:event_appMouseClicked
-
     private void logoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutMouseClicked
          Home a = new Home();
             a.setVisible(true);
             this.dispose();
     }//GEN-LAST:event_logoutMouseClicked
 
-    private void candMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_candMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_candMouseClicked
+    private void feedbackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_feedbackMouseClicked
+            EmployeeFeedback a = new EmployeeFeedback();
+            a.setVisible(true);
+            this.dispose();
+    }//GEN-LAST:event_feedbackMouseClicked
 
-    private void jobsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jobsMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jobsMouseClicked
+    private void meetingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_meetingMouseClicked
+        EmployeeMeetings a = new EmployeeMeetings();
+            a.setVisible(true);
+            this.dispose();
+    }//GEN-LAST:event_meetingMouseClicked
 
-    private void emplMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_emplMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_emplMouseClicked
+    private void personaldataMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_personaldataMouseClicked
+        EmployeePersonalData a = new EmployeePersonalData();
+            a.setVisible(true);
+            this.dispose();
+    }//GEN-LAST:event_personaldataMouseClicked
 
-    private void signin4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signin4MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_signin4MouseClicked
-
-    private void insjobMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_insjobMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_insjobMouseClicked
+    private void dailytaskMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dailytaskMouseClicked
+       
+           EmployeeDailyTask a = new EmployeeDailyTask();
+            a.setVisible(true);
+            this.dispose();
+    }//GEN-LAST:event_dailytaskMouseClicked
 
     /**
      * @param args the command line arguments
@@ -187,14 +156,11 @@ public class Employee extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel app;
-    private javax.swing.JLabel cal;
-    private javax.swing.JLabel cand;
-    private javax.swing.JLabel empl;
+    private javax.swing.JLabel dailytask;
+    private javax.swing.JLabel feedback;
     private javax.swing.JLabel hr;
-    private javax.swing.JLabel insjob;
-    private javax.swing.JLabel jobs;
     private javax.swing.JLabel logout;
-    private javax.swing.JLabel signin4;
+    private javax.swing.JLabel meeting;
+    private javax.swing.JLabel personaldata;
     // End of variables declaration//GEN-END:variables
 }
