@@ -7,7 +7,7 @@ package job;
 
 /**
  *
- * @author giann
+ *
  */
 public class TeamManager extends javax.swing.JFrame {
 
@@ -33,7 +33,6 @@ public class TeamManager extends javax.swing.JFrame {
         empl = new javax.swing.JLabel();
         review = new javax.swing.JLabel();
         cal = new javax.swing.JLabel();
-        signin4 = new javax.swing.JLabel();
         apps = new javax.swing.JLabel();
         manager = new javax.swing.JLabel();
 
@@ -89,14 +88,6 @@ public class TeamManager extends javax.swing.JFrame {
         });
         getContentPane().add(cal, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 400, 120, 30));
 
-        signin4.setText(" ");
-        signin4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                signin4MouseClicked(evt);
-            }
-        });
-        getContentPane().add(signin4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 110, 30));
-
         apps.setText(" ");
         apps.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -114,12 +105,15 @@ public class TeamManager extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void meetMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_meetMouseClicked
-           
+           TeamManagerMeetings a = new TeamManagerMeetings();
+            a.setVisible(true);
+            this.dispose();
     }//GEN-LAST:event_meetMouseClicked
 
     private void persdataMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_persdataMouseClicked
-       
-            ;
+            TeamManagerPersonalData a = new TeamManagerPersonalData();
+            a.setVisible(true);
+            this.dispose();
     }//GEN-LAST:event_persdataMouseClicked
 
     private void logoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutMouseClicked
@@ -129,23 +123,27 @@ public class TeamManager extends javax.swing.JFrame {
     }//GEN-LAST:event_logoutMouseClicked
 
     private void emplMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_emplMouseClicked
-        // TODO add your handling code here:
+        TeamManagerEmployees a = new TeamManagerEmployees();
+            a.setVisible(true);
+            this.dispose();
     }//GEN-LAST:event_emplMouseClicked
 
     private void reviewMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reviewMouseClicked
-        // TODO add your handling code here:
+        TeamManagerReview a = new TeamManagerReview();
+            a.setVisible(true);
+            this.dispose();
     }//GEN-LAST:event_reviewMouseClicked
 
     private void calMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_calMouseClicked
-        // TODO add your handling code here:
+        TeamManagerCalendar a = new TeamManagerCalendar();
+            a.setVisible(true);
+            this.dispose();
     }//GEN-LAST:event_calMouseClicked
 
-    private void signin4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signin4MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_signin4MouseClicked
-
     private void appsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_appsMouseClicked
-        // TODO add your handling code here:
+        TeamManagerApplications a = new TeamManagerApplications();
+            a.setVisible(true);
+            this.dispose();
     }//GEN-LAST:event_appsMouseClicked
 
     /**
@@ -195,6 +193,5 @@ public class TeamManager extends javax.swing.JFrame {
     private javax.swing.JLabel meet;
     private javax.swing.JLabel persdata;
     private javax.swing.JLabel review;
-    private javax.swing.JLabel signin4;
     // End of variables declaration//GEN-END:variables
 }
